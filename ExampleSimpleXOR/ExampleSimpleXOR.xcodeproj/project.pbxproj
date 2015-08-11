@@ -9,15 +9,14 @@
 /* Begin PBXBuildFile section */
 		17E005B28058C93A650858FC /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1519EDDE1D81907007EEECFA /* Utils.cpp */; };
 		3BAE6506C99AE109495B9199 /* Population.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F891D3DE74101A1C5C4613 /* Population.cpp */; };
-		43075F9D21F4837C2AD297F1 /* ofxNEAT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7776992AB21D6C06FADD2A47 /* ofxNEAT.cpp */; };
 		486CCA61CBB061B2F78785FA /* Random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A00C0F741761A2676CEEB85C /* Random.cpp */; };
-		564046CBE0B276917A9286C7 /* ofxNEATThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5579348050ACADCEDEF0E4CA /* ofxNEATThread.cpp */; };
+		564046CBE0B276917A9286C7 /* ofxNEAT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5579348050ACADCEDEF0E4CA /* ofxNEAT.cpp */; };
 		579DDBF5B638C0344C429A72 /* Substrate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4897B045A3F54FBFB799F /* Substrate.cpp */; };
-		69C494D86D50E3A73C143943 /* PhenotypeBehavior.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98BA8AD9DA0AA0D7BEF52F6E /* PhenotypeBehavior.cpp */; };
 		7383F24DEE769FF913306CA6 /* NeuralNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 320D3D6EFFDB596A8C259E20 /* NeuralNetwork.cpp */; };
-		7AB13EB31AD6A1270036EAF4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AB13EAE1AD6A1270036EAF4 /* main.cpp */; };
-		7AB13EB41AD6A1270036EAF4 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AB13EAF1AD6A1270036EAF4 /* ofApp.cpp */; };
-		7AB13EB51AD6A1270036EAF4 /* XORNEATFitnessFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AB13EB11AD6A1270036EAF4 /* XORNEATFitnessFunction.cpp */; };
+		7A0C3E2F1ADD1BEF0069D951 /* rtNEATThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7A0C3E2D1ADD1BEF0069D951 /* rtNEATThread.cpp */; };
+		7A0C3E341ADD26B80069D951 /* rtAgent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7A0C3E321ADD26B80069D951 /* rtAgent.cpp */; };
+		7A4565381AD7351E00D6FE6F /* ofxNEATGenome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7A4565361AD7351E00D6FE6F /* ofxNEATGenome.cpp */; };
+		7AB13EBB1AD6A6D90036EAF4 /* XORNEATFitnessFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AB13EB91AD6A6D90036EAF4 /* XORNEATFitnessFunction.cpp */; };
 		820AE18F62579F7791274DB6 /* Genome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8591BB73571264F436E2DB6 /* Genome.cpp */; };
 		B6E02CDA71FF8291C6A83424 /* Species.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E29271427D6D33E39B8BAA7 /* Species.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
@@ -31,6 +30,8 @@
 		E45BE9810E8CC7DD009D7055 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9770E8CC7DD009D7055 /* CoreServices.framework */; };
 		E45BE9830E8CC7DD009D7055 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9790E8CC7DD009D7055 /* OpenGL.framework */; };
 		E45BE9840E8CC7DD009D7055 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */; };
+		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
 		E4C2424710CC5A17004149E2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424410CC5A17004149E2 /* AppKit.framework */; };
 		E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424510CC5A17004149E2 /* Cocoa.framework */; };
 		E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424610CC5A17004149E2 /* IOKit.framework */; };
@@ -77,24 +78,24 @@
 		31A695BCF9E1BB934B621FDF /* Species.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Species.h; path = ../../../addons/ofxNEAT/libs/MultiNEAT/src/Species.h; sourceTree = SOURCE_ROOT; };
 		320D3D6EFFDB596A8C259E20 /* NeuralNetwork.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = NeuralNetwork.cpp; path = ../../../addons/ofxNEAT/libs/MultiNEAT/src/NeuralNetwork.cpp; sourceTree = SOURCE_ROOT; };
 		3E02AA255A754CEBF050DB70 /* Genome.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Genome.h; path = ../../../addons/ofxNEAT/libs/MultiNEAT/src/Genome.h; sourceTree = SOURCE_ROOT; };
-		4C514CB38D8B9E84160D210C /* ofxNEAT.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxNEAT.h; path = ../../../addons/ofxNEAT/src/ofxNEAT.h; sourceTree = SOURCE_ROOT; };
 		5281812F085C234D640C0974 /* ofxNEATFitnessFunction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxNEATFitnessFunction.h; path = ../../../addons/ofxNEAT/src/ofxNEATFitnessFunction.h; sourceTree = SOURCE_ROOT; };
-		5579348050ACADCEDEF0E4CA /* ofxNEATThread.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxNEATThread.cpp; path = ../../../addons/ofxNEAT/src/ofxNEATThread.cpp; sourceTree = SOURCE_ROOT; };
+		5579348050ACADCEDEF0E4CA /* ofxNEAT.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxNEAT.cpp; path = ../../../addons/ofxNEAT/src/ofxNEAT.cpp; sourceTree = SOURCE_ROOT; };
 		55C91698DC22C1B9FF380780 /* Population.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Population.h; path = ../../../addons/ofxNEAT/libs/MultiNEAT/src/Population.h; sourceTree = SOURCE_ROOT; };
 		5960B1943D7D33F21064906F /* Genes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Genes.h; path = ../../../addons/ofxNEAT/libs/MultiNEAT/src/Genes.h; sourceTree = SOURCE_ROOT; };
 		75F891D3DE74101A1C5C4613 /* Population.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Population.cpp; path = ../../../addons/ofxNEAT/libs/MultiNEAT/src/Population.cpp; sourceTree = SOURCE_ROOT; };
-		7776992AB21D6C06FADD2A47 /* ofxNEAT.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxNEAT.cpp; path = ../../../addons/ofxNEAT/src/ofxNEAT.cpp; sourceTree = SOURCE_ROOT; };
-		7AB13EAE1AD6A1270036EAF4 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		7AB13EAF1AD6A1270036EAF4 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
-		7AB13EB01AD6A1270036EAF4 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
-		7AB13EB11AD6A1270036EAF4 /* XORNEATFitnessFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XORNEATFitnessFunction.cpp; sourceTree = "<group>"; };
-		7AB13EB21AD6A1270036EAF4 /* XORNEATFitnessFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XORNEATFitnessFunction.h; sourceTree = "<group>"; };
+		7A0C3E2D1ADD1BEF0069D951 /* rtNEATThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtNEATThread.cpp; sourceTree = "<group>"; };
+		7A0C3E2E1ADD1BEF0069D951 /* rtNEATThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtNEATThread.h; sourceTree = "<group>"; };
+		7A0C3E321ADD26B80069D951 /* rtAgent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtAgent.cpp; sourceTree = "<group>"; };
+		7A0C3E331ADD26B80069D951 /* rtAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtAgent.h; sourceTree = "<group>"; };
+		7A4565361AD7351E00D6FE6F /* ofxNEATGenome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxNEATGenome.cpp; path = ../src/ofxNEATGenome.cpp; sourceTree = "<group>"; };
+		7A4565371AD7351E00D6FE6F /* ofxNEATGenome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxNEATGenome.h; path = ../src/ofxNEATGenome.h; sourceTree = "<group>"; };
+		7A9A61081AEF9E06003237CC /* Behaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Behaviour.h; path = ../libs/MultiNEAT/src/Behaviour.h; sourceTree = "<group>"; };
+		7AB13EB91AD6A6D90036EAF4 /* XORNEATFitnessFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XORNEATFitnessFunction.cpp; sourceTree = "<group>"; };
+		7AB13EBA1AD6A6D90036EAF4 /* XORNEATFitnessFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XORNEATFitnessFunction.h; sourceTree = "<group>"; };
 		7AEBAA8B95D9829FB248A9FC /* Substrate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Substrate.h; path = ../../../addons/ofxNEAT/libs/MultiNEAT/src/Substrate.h; sourceTree = SOURCE_ROOT; };
-		7D5283E80D207D5A4177353D /* PhenotypeBehavior.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = PhenotypeBehavior.h; path = ../../../addons/ofxNEAT/libs/MultiNEAT/src/PhenotypeBehavior.h; sourceTree = SOURCE_ROOT; };
 		7E29271427D6D33E39B8BAA7 /* Species.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Species.cpp; path = ../../../addons/ofxNEAT/libs/MultiNEAT/src/Species.cpp; sourceTree = SOURCE_ROOT; };
-		7F2176D2499578CC59BB7A90 /* ofxNEATThread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxNEATThread.h; path = ../../../addons/ofxNEAT/src/ofxNEATThread.h; sourceTree = SOURCE_ROOT; };
+		7F2176D2499578CC59BB7A90 /* ofxNEAT.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxNEAT.h; path = ../../../addons/ofxNEAT/src/ofxNEAT.h; sourceTree = SOURCE_ROOT; };
 		9015A93E57BA646197598CE2 /* Innovation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Innovation.cpp; path = ../../../addons/ofxNEAT/libs/MultiNEAT/src/Innovation.cpp; sourceTree = SOURCE_ROOT; };
-		98BA8AD9DA0AA0D7BEF52F6E /* PhenotypeBehavior.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = PhenotypeBehavior.cpp; path = ../../../addons/ofxNEAT/libs/MultiNEAT/src/PhenotypeBehavior.cpp; sourceTree = SOURCE_ROOT; };
 		9AF4897B045A3F54FBFB799F /* Substrate.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Substrate.cpp; path = ../../../addons/ofxNEAT/libs/MultiNEAT/src/Substrate.cpp; sourceTree = SOURCE_ROOT; };
 		A00C0F741761A2676CEEB85C /* Random.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Random.cpp; path = ../../../addons/ofxNEAT/libs/MultiNEAT/src/Random.cpp; sourceTree = SOURCE_ROOT; };
 		B91A24C87F08930A376C13CE /* Innovation.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Innovation.h; path = ../../../addons/ofxNEAT/libs/MultiNEAT/src/Innovation.h; sourceTree = SOURCE_ROOT; };
@@ -112,7 +113,10 @@
 		E45BE9770E8CC7DD009D7055 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
 		E45BE9790E8CC7DD009D7055 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
-		E4B69B5B0A3A1756003C02F2 /* ExampleSimpleXORDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleSimpleXORDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69B5B0A3A1756003C02F2 /* exampleSimpleXORDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exampleSimpleXORDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4C2424410CC5A17004149E2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		E4C2424510CC5A17004149E2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -163,6 +167,7 @@
 		6B2D181ED40F837D6440062A /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				7A9A60FB1AEF9138003237CC /* mine */,
 				126DD48274EFCA61356F3C94 /* MultiNEAT */,
 			);
 			name = libs;
@@ -171,11 +176,11 @@
 		72F32DE73C5695F6BE8F3AF9 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				7776992AB21D6C06FADD2A47 /* ofxNEAT.cpp */,
-				4C514CB38D8B9E84160D210C /* ofxNEAT.h */,
+				7F2176D2499578CC59BB7A90 /* ofxNEAT.h */,
+				5579348050ACADCEDEF0E4CA /* ofxNEAT.cpp */,
 				5281812F085C234D640C0974 /* ofxNEATFitnessFunction.h */,
-				5579348050ACADCEDEF0E4CA /* ofxNEATThread.cpp */,
-				7F2176D2499578CC59BB7A90 /* ofxNEATThread.h */,
+				7A4565371AD7351E00D6FE6F /* ofxNEATGenome.h */,
+				7A4565361AD7351E00D6FE6F /* ofxNEATGenome.cpp */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -184,37 +189,62 @@
 			isa = PBXGroup;
 			children = (
 				5960B1943D7D33F21064906F /* Genes.h */,
-				D8591BB73571264F436E2DB6 /* Genome.cpp */,
 				3E02AA255A754CEBF050DB70 /* Genome.h */,
-				9015A93E57BA646197598CE2 /* Innovation.cpp */,
+				D8591BB73571264F436E2DB6 /* Genome.cpp */,
 				B91A24C87F08930A376C13CE /* Innovation.h */,
-				320D3D6EFFDB596A8C259E20 /* NeuralNetwork.cpp */,
+				9015A93E57BA646197598CE2 /* Innovation.cpp */,
 				2917390DB26EF00518467EED /* NeuralNetwork.h */,
-				D0DBE69E2AB54AB63CEA046B /* Parameters.cpp */,
-				D99FCB88B4A37104F11B9317 /* Parameters.h */,
-				98BA8AD9DA0AA0D7BEF52F6E /* PhenotypeBehavior.cpp */,
-				7D5283E80D207D5A4177353D /* PhenotypeBehavior.h */,
-				75F891D3DE74101A1C5C4613 /* Population.cpp */,
+				320D3D6EFFDB596A8C259E20 /* NeuralNetwork.cpp */,
 				55C91698DC22C1B9FF380780 /* Population.h */,
-				A00C0F741761A2676CEEB85C /* Random.cpp */,
+				75F891D3DE74101A1C5C4613 /* Population.cpp */,
+				D99FCB88B4A37104F11B9317 /* Parameters.h */,
+				D0DBE69E2AB54AB63CEA046B /* Parameters.cpp */,
 				F5959D8289A0463A4C79D013 /* Random.h */,
-				7E29271427D6D33E39B8BAA7 /* Species.cpp */,
+				A00C0F741761A2676CEEB85C /* Random.cpp */,
 				31A695BCF9E1BB934B621FDF /* Species.h */,
+				7E29271427D6D33E39B8BAA7 /* Species.cpp */,
 				9AF4897B045A3F54FBFB799F /* Substrate.cpp */,
 				7AEBAA8B95D9829FB248A9FC /* Substrate.h */,
-				1519EDDE1D81907007EEECFA /* Utils.cpp */,
 				BF859F1999162ECB43598438 /* Utils.h */,
+				1519EDDE1D81907007EEECFA /* Utils.cpp */,
+				7A9A61081AEF9E06003237CC /* Behaviour.h */,
 			);
 			name = src;
 			sourceTree = "<group>";
 		};
-		7AB13EB61AD6A1300036EAF4 /* xor fitness */ = {
+		7A0C3E301ADD1BF70069D951 /* NEAT */ = {
 			isa = PBXGroup;
 			children = (
-				7AB13EB11AD6A1270036EAF4 /* XORNEATFitnessFunction.cpp */,
-				7AB13EB21AD6A1270036EAF4 /* XORNEATFitnessFunction.h */,
+				7AB13EBA1AD6A6D90036EAF4 /* XORNEATFitnessFunction.h */,
+				7AB13EB91AD6A6D90036EAF4 /* XORNEATFitnessFunction.cpp */,
 			);
-			name = "xor fitness";
+			name = NEAT;
+			sourceTree = "<group>";
+		};
+		7A0C3E311ADD1C010069D951 /* rtNEAT */ = {
+			isa = PBXGroup;
+			children = (
+				7A0C3E2E1ADD1BEF0069D951 /* rtNEATThread.h */,
+				7A0C3E2D1ADD1BEF0069D951 /* rtNEATThread.cpp */,
+			);
+			name = rtNEAT;
+			sourceTree = "<group>";
+		};
+		7A0C3E351ADD26BD0069D951 /* Agent */ = {
+			isa = PBXGroup;
+			children = (
+				7A0C3E331ADD26B80069D951 /* rtAgent.h */,
+				7A0C3E321ADD26B80069D951 /* rtAgent.cpp */,
+			);
+			name = Agent;
+			sourceTree = "<group>";
+		};
+		7A9A60FB1AEF9138003237CC /* mine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = mine;
+			path = ../libs/mine;
 			sourceTree = "<group>";
 		};
 		8EE4279008BC2A423E6CCE11 /* ofxNEAT */ = {
@@ -289,17 +319,19 @@
 				E4EEC9E9138DF44700A80321 /* openFrameworks */,
 				BB4B014C10F69532006C3DED /* addons */,
 				E45BE5980E8CC70C009D7055 /* frameworks */,
-				E4B69B5B0A3A1756003C02F2 /* ExampleSimpleXORDebug.app */,
+				E4B69B5B0A3A1756003C02F2 /* exampleSimpleXORDebug.app */,
 			);
 			sourceTree = "<group>";
 		};
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				7AB13EB61AD6A1300036EAF4 /* xor fitness */,
-				7AB13EB01AD6A1270036EAF4 /* ofApp.h */,
-				7AB13EAF1AD6A1270036EAF4 /* ofApp.cpp */,
-				7AB13EAE1AD6A1270036EAF4 /* main.cpp */,
+				7A0C3E351ADD26BD0069D951 /* Agent */,
+				7A0C3E311ADD1C010069D951 /* rtNEAT */,
+				7A0C3E301ADD1BF70069D951 /* NEAT */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -316,9 +348,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E4B69B5A0A3A1756003C02F2 /* ExampleSimpleXOR */ = {
+		E4B69B5A0A3A1756003C02F2 /* exampleSimpleXOR */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "ExampleSimpleXOR" */;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "exampleSimpleXOR" */;
 			buildPhases = (
 				E4B69B580A3A1756003C02F2 /* Sources */,
 				E4B69B590A3A1756003C02F2 /* Frameworks */,
@@ -330,9 +362,9 @@
 			dependencies = (
 				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
 			);
-			name = ExampleSimpleXOR;
+			name = exampleSimpleXOR;
 			productName = myOFApp;
-			productReference = E4B69B5B0A3A1756003C02F2 /* ExampleSimpleXORDebug.app */;
+			productReference = E4B69B5B0A3A1756003C02F2 /* exampleSimpleXORDebug.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -343,7 +375,7 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 			};
-			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "ExampleSimpleXOR" */;
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "exampleSimpleXOR" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -364,7 +396,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				E4B69B5A0A3A1756003C02F2 /* ExampleSimpleXOR */,
+				E4B69B5A0A3A1756003C02F2 /* exampleSimpleXOR */,
 			);
 		};
 /* End PBXProject section */
@@ -400,21 +432,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AB13EB51AD6A1270036EAF4 /* XORNEATFitnessFunction.cpp in Sources */,
-				7AB13EB41AD6A1270036EAF4 /* ofApp.cpp in Sources */,
-				43075F9D21F4837C2AD297F1 /* ofxNEAT.cpp in Sources */,
-				564046CBE0B276917A9286C7 /* ofxNEATThread.cpp in Sources */,
+				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				7A4565381AD7351E00D6FE6F /* ofxNEATGenome.cpp in Sources */,
+				564046CBE0B276917A9286C7 /* ofxNEAT.cpp in Sources */,
 				820AE18F62579F7791274DB6 /* Genome.cpp in Sources */,
 				D67D178238D81C1CC2188A8F /* Innovation.cpp in Sources */,
 				7383F24DEE769FF913306CA6 /* NeuralNetwork.cpp in Sources */,
+				7A0C3E2F1ADD1BEF0069D951 /* rtNEATThread.cpp in Sources */,
 				E54BBE411CC933E5057C6AC4 /* Parameters.cpp in Sources */,
-				69C494D86D50E3A73C143943 /* PhenotypeBehavior.cpp in Sources */,
+				7A0C3E341ADD26B80069D951 /* rtAgent.cpp in Sources */,
 				3BAE6506C99AE109495B9199 /* Population.cpp in Sources */,
 				486CCA61CBB061B2F78785FA /* Random.cpp in Sources */,
 				B6E02CDA71FF8291C6A83424 /* Species.cpp in Sources */,
-				7AB13EB31AD6A1270036EAF4 /* main.cpp in Sources */,
 				579DDBF5B638C0344C429A72 /* Substrate.cpp in Sources */,
 				17E005B28058C93A650858FC /* Utils.cpp in Sources */,
+				7AB13EBB1AD6A6D90036EAF4 /* XORNEATFitnessFunction.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +486,7 @@
 					"$(OF_CORE_HEADERS)",
 					../../../addons/ofxNEAT/libs,
 					../../../addons/ofxNEAT/libs/MultiNEAT,
+					../../../addons/ofxNEAT/libs/MultiNEAT/examples,
 					../../../addons/ofxNEAT/libs/MultiNEAT/src,
 					../../../addons/ofxNEAT/src,
 				);
@@ -491,6 +525,7 @@
 					"$(OF_CORE_HEADERS)",
 					../../../addons/ofxNEAT/libs,
 					../../../addons/ofxNEAT/libs/MultiNEAT,
+					../../../addons/ofxNEAT/libs/MultiNEAT/examples,
 					../../../addons/ofxNEAT/libs/MultiNEAT/src,
 					../../../addons/ofxNEAT/src,
 				);
@@ -678,7 +713,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "ExampleSimpleXOR" */ = {
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "exampleSimpleXOR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B69B4E0A3A1720003C02F2 /* Debug */,
@@ -687,7 +722,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "ExampleSimpleXOR" */ = {
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "exampleSimpleXOR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B69B600A3A1757003C02F2 /* Debug */,

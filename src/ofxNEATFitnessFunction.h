@@ -8,14 +8,12 @@
 
 #pragma once
 
-#include "ofMain.h"
-#include "Genome.h"
+#include "ofxNEATGenome.h"
 
 class ofxNEATFitnessFunction
 {
     public:
-    virtual ~ofxNEATFitnessFunction() {};
-    virtual double evaluate(NEAT::Genome& genome) = 0;
+    virtual double evaluate(ofxNEATGenome& genome) = 0;
 };
 
 

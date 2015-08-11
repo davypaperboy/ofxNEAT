@@ -4,7 +4,7 @@ dependencies: \
   ../../../addons/ofxNEAT/libs/MultiNEAT/src/Genes.h \
   ../../../addons/ofxNEAT/libs/MultiNEAT/src/Parameters.h \
   ../../../addons/ofxNEAT/libs/MultiNEAT/src/Genome.h \
+  ../../../addons/ofxNEAT/libs/MultiNEAT/src/Behaviour.h \
   ../../../addons/ofxNEAT/libs/MultiNEAT/src/NeuralNetwork.h \
   ../../../addons/ofxNEAT/libs/MultiNEAT/src/Substrate.h \
-  ../../../addons/ofxNEAT/libs/MultiNEAT/src/PhenotypeBehavior.h \
   ../../../addons/ofxNEAT/libs/MultiNEAT/src/Random.h

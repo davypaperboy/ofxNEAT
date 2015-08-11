@@ -8,38 +8,28 @@
 
 #include "XORNEATFitnessFunction.h"
 
-
-double testNet(NEAT::NeuralNetwork& net, double input_a, double input_b, double output)
+double testNet(ofxNEATGenome& genome, double input_a, double input_b)
 {
     std::vector<double> inputs;
     inputs.resize(3);
-    
-    net.Flush();
     inputs[0] = input_a;
     inputs[1] = input_b;
     inputs[2] = 1;
-    net.Input(inputs);
-    for(int i=0; i < 2; i++) {
-        net.Activate();
-    }
-    double out = net.Output()[0];
-    return std::abs(out - output);
+    return genome.activate(inputs)[0];
 }
 
-double xorTestNEAT(NEAT::Genome& g)
+double xorTestNEAT(ofxNEATGenome& genome)
 {
-    NEAT::NeuralNetwork net(false);
-    g.BuildPhenotype(net);
-    
+    genome.buildPhenotype();
     double error = 0;
-    error += testNet(net, 1, 0, 1.0);
-    error += testNet(net, 0, 1, 1.0);
-    error += testNet(net, 0, 0, 0.0);
-    error += testNet(net, 1, 1, 0.0);
+    error += abs(testNet(genome, 1, 0) - 1.0);
+    error += abs(testNet(genome, 0, 1) - 1.0);
+    error += testNet(genome, 0, 0);
+    error += testNet(genome, 1, 1);
     return  (4.0 - error)*(4.0 - error);
 }
 
-double XORNEATFitnessFunction::evaluate(NEAT::Genome &genome)
+double XORNEATFitnessFunction::evaluate(ofxNEATGenome& genome)
 {
     return xorTestNEAT(genome);
 }

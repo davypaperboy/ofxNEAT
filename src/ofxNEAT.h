@@ -1,29 +1,50 @@
 //
-//  ofxNEAT.h
+//  ofxNEATThread.h
 //  example_XOR_NEAT
 //
-//  Created by Davy Smith on 06/04/2015.
+//  Created by Davy Smith on 07/04/2015.
 //
 //
 
 #pragma once
-#include "ofMain.h"
-#include "ofxNEATThread.h"
-#include "ofxNEATFitnessFunction.h"
 
-class ofxNEAT
+#include "ofMain.h"
+
+class ofxNEATImplementation;
+class ofxNEATFitnessFunction;
+
+class ofxNEAT : public ofThread
 {
-  
-public:
+
+    public:
     
-    void setFitnessFunction(ofxNEATFitnessFunction& fitness);
+    ofxNEAT();
+    ~ofxNEAT();
+    
     void initDefaultNEATParameters();
-    void setTargetFitness(double target);
-    void setNumberOfGenerations(int gens);
-    void evolve();
+    void loadParameters(const string a_filename);
+    void saveParameters(const string a_filename);
+    
+    void setupPopulation(unsigned int inputs, unsigned int hidden, unsigned int outputs);
+
+    void setFitnessFunction(ofxNEATFitnessFunction& fitness);
+    void setTargetFitness(const double target);
+    void setNumberOfGenerations(const int gens);
+    
+    void evolveThreaded();
+    void realTimeEvaluateFitnessAndTick(int& deceased_id, int& new_baby_id);
+    void realTickWithoutEvaluation(int& deceased_id, int& new_baby_id);
+    
+    unsigned int currentGeneration() const;
+    unsigned int populationSize() const;
+    vector<unsigned int>& genomeIds();
+    double bestFitness() const;
 
 private:
-
-    ofxNEATThread thread;
     
+    void threadedFunction();
+    
+    ofxNEATImplementation* p_impl;
+
 };
+

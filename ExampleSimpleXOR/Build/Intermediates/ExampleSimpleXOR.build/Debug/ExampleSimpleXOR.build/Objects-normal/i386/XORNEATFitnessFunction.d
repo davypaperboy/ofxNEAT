@@ -1,7 +1,8 @@
 dependencies: \
-  /Users/davys/Documents/research/year3/openframeworks/of_v0.8.4_osx_release/addons/ofxNEAT/ExampleSimpleXOR/src/XORNEATFitnessFunction.cpp \
-  /Users/davys/Documents/research/year3/openframeworks/of_v0.8.4_osx_release/addons/ofxNEAT/ExampleSimpleXOR/src/XORNEATFitnessFunction.h \
+  /Users/davys/Documents/research/year3/openframeworks/of_v0.8.4_osx_release/addons/ofxNEAT/exampleSimpleXOR/src/XORNEATFitnessFunction.cpp \
+  /Users/davys/Documents/research/year3/openframeworks/of_v0.8.4_osx_release/addons/ofxNEAT/exampleSimpleXOR/src/XORNEATFitnessFunction.h \
   /Users/davys/Documents/research/year3/openframeworks/of_v0.8.4_osx_release/addons/ofxNEAT/src/ofxNEATFitnessFunction.h \
+  ../../../addons/ofxNEAT/src/ofxNEATGenome.h \
   ../../../libs/openFrameworks/ofMain.h \
   ../../../libs/openFrameworks/utils/ofConstants.h \
   ../../../libs/glew/include/GL/glew.h \
@@ -171,12 +172,4 @@ dependencies: \
   ../../../libs/openFrameworks/video/ofVideoPlayer.h \
   ../../../libs/openFrameworks/video/ofQTKitPlayer.h \
   ../../../libs/openFrameworks/3d/ofCamera.h \
-  ../../../libs/openFrameworks/3d/ofEasyCam.h \
-  /Users/davys/Documents/research/year3/openframeworks/of_v0.8.4_osx_release/addons/ofxNEAT/libs/MultiNEAT/src/Genome.h \
-  ../../../addons/ofxNEAT/libs/MultiNEAT/src/NeuralNetwork.h \
-  ../../../addons/ofxNEAT/libs/MultiNEAT/src/Genes.h \
-  ../../../addons/ofxNEAT/libs/MultiNEAT/src/Parameters.h \
-  ../../../addons/ofxNEAT/libs/MultiNEAT/src/Substrate.h \
-  ../../../addons/ofxNEAT/libs/MultiNEAT/src/Innovation.h \
-  ../../../addons/ofxNEAT/libs/MultiNEAT/src/PhenotypeBehavior.h \
-  ../../../addons/ofxNEAT/libs/MultiNEAT/src/Random.h
+  ../../../libs/openFrameworks/3d/ofEasyCam.h

@@ -1,12 +1,21 @@
+//
+//  ofApp.h
+//  exampleSimpleXOR
+//
+//  Created by Davy Smith on 14/04/2015.
+//
+//
+
 #pragma once
 
 #include "ofMain.h"
 #include "ofxNEAT.h"
 #include "XORNEATFitnessFunction.h"
+#include "rtNEATThread.h"
 
-class ofApp : public ofBaseApp{
-
-	public:
+class ofApp : public ofBaseApp
+{
+    public:
 		
     void setup();
     void update();
@@ -21,7 +30,8 @@ class ofApp : public ofBaseApp{
     void windowResized(int w, int h);
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
+ 
+    rtNEATThread rtThread;
+    double fitness;
     
-    XORNEATFitnessFunction xorFitness;
-    ofxNEAT neat;
 };

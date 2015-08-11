@@ -9,11 +9,11 @@
 #pragma once
 
 #include "ofxNEATFitnessFunction.h"
-#include "Genome.h"
+#include "ofxNEATGenome.h"
 
 class XORNEATFitnessFunction : public ofxNEATFitnessFunction
 {
     public:
-    double evaluate(NEAT::Genome& genome);
+    double evaluate(ofxNEATGenome& genome);
     
 };

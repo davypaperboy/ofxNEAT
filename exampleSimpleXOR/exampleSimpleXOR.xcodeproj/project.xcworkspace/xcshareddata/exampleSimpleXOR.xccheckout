@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D9CE763D-13C8-4936-9878-158194D7F24D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>exampleSimpleXOR</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1C0E7F67732EC91E62079CEAE5149A6138DC3FE6</key>
+		<string>github.com:peter-ch/MultiNEAT.git</string>
+		<key>263DA01721EAB4184882C47BC0CB4FA15DB024EB</key>
+		<string>github.com:davypaperboy/ofxNEAT.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>exampleSimpleXOR/exampleSimpleXOR.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1C0E7F67732EC91E62079CEAE5149A6138DC3FE6</key>
+		<string>../../..libs/MultiNEAT</string>
+		<key>263DA01721EAB4184882C47BC0CB4FA15DB024EB</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:davypaperboy/ofxNEAT.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>263DA01721EAB4184882C47BC0CB4FA15DB024EB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1C0E7F67732EC91E62079CEAE5149A6138DC3FE6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MultiNEAT</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>263DA01721EAB4184882C47BC0CB4FA15DB024EB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxNEAT</string>
+		</dict>
+	</array>
+</dict>
+</plist>

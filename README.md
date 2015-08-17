@@ -1,9 +1,6 @@
 # ofxNEAT
 NEAT addon for OpenFrameworks
 
-###NOTICE --- EARLY STAGES -- NOT WORKING YET!!!!
-
-
 Neuroevolution of augmenting topologies (NEAT) addon for openframeworks.
 
 The NEAT algorithm is a evolutionary algorithm to evolve neural networks.
